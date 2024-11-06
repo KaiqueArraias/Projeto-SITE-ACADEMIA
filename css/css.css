@@ -13,7 +13,7 @@ body {
 
 /* Cabeçalho e Menu */
 header {
-    background-color: #111317; /* Cor do cabeçalho */
+    background-color: #111317;
     color: white;
     padding: 1.5em 0;
     text-align: center;
@@ -68,7 +68,7 @@ header {
 /* Conteúdo Principal */
 .container_front {
     text-align: left;
-    padding: 200px 600px 50px 350px;
+    padding: 10% 15% 5% 23%;
     color: white;
     position: relative;
 }
@@ -124,4 +124,122 @@ header {
     background-color: #d79447; 
     outline: 5px solid #d79447;
     outline-offset: -5px;
+}
+
+/* Agora parte dos cards */
+
+.program {
+    text-align: center;
+}
+
+.program h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.program-tab {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.tab {
+    background-color: #333;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.icon img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain; /* Garante que a imagem se ajuste sem distorção */
+    background-color: #F9AC54;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.tab h3 {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.tab p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.join-now {
+    display: inline-block;
+    margin-top: 10px;
+    color: #f79c42;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sessão das duas fotos e conteúdo com botão */
+
+.class-book-a-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    color: white;
+}
+
+.class-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    height: 500px;
+}
+.imagens .back {
+    width: 475px;
+    height: auto;
+    border-radius: 3px;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    z-index: 1;
+}
+
+.imagens .front {
+    width: 350px;
+    height: auto;
+    border-radius: 3px;
+    position: absolute;
+    left: 15%;
+    top: 60%;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+
+/* Ajustes no texto */
+
+.class-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: left;
+    padding: 100px 200px 100px 900px; /* Ajuste no padding se necessário  % deixa ele mais responsivos a outros tamanhos de tela */
+    z-index: 2;
+}
+
+.book-class {
+    background-color: #F9AC54;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.book-class:hover {
+    background-color: #d79447;
 }
