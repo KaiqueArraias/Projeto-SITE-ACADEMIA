@@ -50,6 +50,7 @@ header {
 }
 
 #join_now {
+    font-size: 15px;
     background-color: #f9ac54;
     color: white;
     padding: 0.5em 1em;
@@ -77,7 +78,7 @@ header {
     content: "";
     background-image: url('../img/header.png');
     background-size: auto 100%;
-    background-position: 70% calc(50% + 50px);
+    background-position: 80% calc(50% + 50px);
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
@@ -114,6 +115,7 @@ header {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 15px;
     font-weight: bold;
     position: relative;
     z-index: 2;
@@ -139,6 +141,13 @@ header {
     padding-top: 70px;
     padding-bottom: 50px;
 }
+.program h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
 
 .program-tab {
     display: flex;
@@ -147,12 +156,17 @@ header {
 }
 
 .tab {
-    background-color: #333;
+    background-color: #22252a;
     padding: 20px;
     width: 200px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     text-align: left;
+}
+
+.tab:hover{
+    background-color: #272a30;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 .icon img {
@@ -202,7 +216,7 @@ header {
 .imagens .back {
     width: 475px;
     height: auto;
-    border-radius: 3px;
+    border-radius: 10px;
     position: absolute;
     top: 20%;
     left: 25%;
@@ -212,7 +226,7 @@ header {
 .imagens .front {
     width: 350px;
     height: auto;
-    border-radius: 3px;
+    border-radius: 10px;
     position: absolute;
     left: 15%;
     top: 60%;
@@ -243,3 +257,196 @@ header {
 .book-class:hover {
     background-color: #d79447;
 }
+/* sessão why */
+
+.why-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px; /* Define uma largura máxima para o conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo na página */
+    margin-top: 70px;
+}
+
+.why-join-us h2 {
+    margin-top: 130px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.why-join-us p {
+    color: white;
+    text-align: center;
+    font-size: 17px;
+}
+/* Contêiner da Imagem e Benefits */
+
+.img-container {
+    position: relative;
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+/* Estilos da Imagem */
+.img-why {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.benefits {
+    position: absolute;
+    bottom: -150px; /* Ajuste para que a div fique sobreposta na parte inferior da imagem */
+    left: 50%;
+    transform: translateX(-50%); /*translateX(-50%) funciona para garantir que o centro da div.benefits esteja alinhado com o centro do contêiner*/
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    background-color: #22252a;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    
+}
+
+/* Estilos para cada benefício */
+.benefit-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    padding: 20px;
+    background-color: #22252a;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.benefit-item:hover{
+    background-color: #272a30;
+}
+
+.benefit-item .icon img {
+    width: 48px;
+    height: 48px;
+    background-color: #F9AC54;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.benefit-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: white;
+}
+
+.benefit-item p {
+    font-size: 14px;
+    color: #aaa;
+    line-height: 1.5;
+}
+
+/* Pricing Plans Section */
+.pricing-plans {
+    text-align: center;
+    color: white;
+    padding: 60px 20px;
+    background-color: #111317;
+    margin-top: 250px;
+}
+
+.pricing-plans h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.pricing-plans p {
+    color: #ccc;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.plan {
+    background-color: #22252a;
+    color: white;
+    padding: 30px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column; /* Torna o conteúdo da div em uma coluna */
+    justify-content: space-between; /* Distribui o conteúdo para alinhar o botão ao final */
+    text-align: left;
+    min-height: 400px; /* Define uma altura mínima para uniformizar */
+}
+.plan:hover{
+    background-color: #272a30;
+    border: 2px solid #f9ac54;
+
+}
+
+.plan h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.plan .price {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #f9ac54;
+}
+
+.plan hr {
+    border: none;
+    height: 1px;
+    background-color: #444;
+    margin: 15px 0;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    flex-grow: 1; /* Faz com que a lista ocupe o espaço necessário, empurrando o botão para baixo */
+}
+
+.plan ul li {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 8px;
+}
+
+.join-now {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    color: #f9ac54;
+    border: 1px solid #f9ac54;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    margin-top: auto; /* Garante que o botão fique no final do contêiner */
+}
+
+.join-now:hover {
+    background-color: #f9ac54;
+    color: white;
+}
+
+
