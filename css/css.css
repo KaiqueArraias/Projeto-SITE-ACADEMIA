@@ -254,7 +254,14 @@ header {
     position: relative;
     height: 500px;
 }
-.imagens .back {
+.imagem{
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+.imagem.animate{
+    opacity: 1;
+}
+.imagem .back {
     width: 475px;
     height: auto;
     border-radius: 10px;
@@ -264,7 +271,7 @@ header {
     z-index: 1;
 }
 
-.imagens .front {
+.imagem .front {
     width: 350px;
     height: auto;
     border-radius: 10px;
@@ -335,6 +342,12 @@ header {
 .img-why {
     width: 100%;
     border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.img-why.animate{
+    opacity: 1;
 }
 
 .benefits {
