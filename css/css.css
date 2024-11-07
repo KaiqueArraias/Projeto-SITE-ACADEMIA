@@ -9,6 +9,15 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #111317; /* Cor de fundo */
     color: #333;
+    animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* Cabeçalho e Menu */
@@ -48,9 +57,11 @@ header {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: all 0.3s ease;
 }
 #menu-horizontal ul li a:hover{
     color:#f9ac54;
+    transform: scale(1.1);
 }
 
 #join_now {
@@ -76,6 +87,17 @@ header {
     padding: 10% 15% 5% 23%;
     color: white;
     position: relative;
+    animation: slideIn 1s ease-out;
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .container_front::before {
@@ -123,11 +145,23 @@ header {
     font-weight: bold;
     position: relative;
     z-index: 2;
+    animation: pulse 2s infinite; /* Animação de pulsação */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 #get_started:hover {
-    color: white;
-    background-color: #d79447; 
+    background-color: #d79447;
     outline: 5px solid #d79447;
     outline-offset: -5px;
 }
@@ -166,12 +200,14 @@ header {
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     text-align: left;
+    transition: all 0.3s ease-in-out;
 }
 
 .tab:hover{
     background-color: #272a30;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
     border: 1px solid #f79c42;
+    transform: scale(1.05); /* Aumenta o card ao passar o mouse */
 }
 
 .icon img {
@@ -330,9 +366,11 @@ header {
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
-.benefit-item:hover{
+.benefit-item:hover {
     background-color: #272a30;
     border: 1px solid #f79c42;
+    transform: translateY(-10px); /* Move o card para cima ao passar o mouse */
+    transition: transform 0.3s ease-in-out;
 }
 
 .benefit-item .icon img {
@@ -552,6 +590,11 @@ h2 {
     color: #ffffff;
     padding: 40px 20px;
     margin-top: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.footer:hover {
+    background-color: #272a30; /* Escurece o fundo ao passar o mouse */
 }
 
 .footer-content {
@@ -619,12 +662,13 @@ h2 {
     justify-content: center;
     background-color: #111317; 
     border-radius: 50%; 
-    transition: color 0.3s, background-color 0.3s;
+    transition: all 0.3s ease;
 }
 
 .social-icons a:hover {
     color: #ffffff;
     background-color: #f9ac54;
+    transform: rotate(360deg); /* Efeito de rotação */
 }
 
 .logo-img {
