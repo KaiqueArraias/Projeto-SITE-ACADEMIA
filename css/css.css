@@ -32,6 +32,12 @@ header {
     padding-left: 150px;
     width: 300px;
     height: auto;
+    transition: transform 0.3s ease; /* Adicionando transição suave */
+    transform-origin: center;
+}
+
+.logo:hover {
+    transform: scale(1.05);
 }
 
 #menu-horizontal {
@@ -58,6 +64,7 @@ header {
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
+
 }
 #menu-horizontal ul li a:hover{
     color:#f9ac54;
